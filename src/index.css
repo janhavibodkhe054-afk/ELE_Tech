@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+
+/* Required for 3D flip cards */
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.transform-style-preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Rotation utilities */
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
