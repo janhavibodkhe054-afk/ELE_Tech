@@ -1,7 +1,14 @@
 // IndustryCTA.jsx
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const IndustryCTA = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate("/contact");
+  };
+
   return (
     <section className="py-20 bg-gradient-to-r from-blue-600 to-orange-400 text-white text-center">
       <h2 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-down">
@@ -11,7 +18,7 @@ const IndustryCTA = () => {
         Contact Ele-Tech Engineering Solutions today and discuss your project with our experts.
       </p>
       <a
-        href="/contact"
+        onClick={handleContactClick}
         className="bg-white text-blue-600 font-semibold px-8 py-4 rounded-lg hover:bg-gray-100 transition"
         data-aos="zoom-in"
       >
