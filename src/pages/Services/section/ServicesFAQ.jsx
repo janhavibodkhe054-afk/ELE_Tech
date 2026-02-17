@@ -22,44 +22,47 @@ const faqs = [
 const ServicesFAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const toggleFAQ = (index) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
   return (
-    <section className="relative py-24 bg-gradient-to-br from-white via-blue-50 to-orange-50 overflow-hidden">
+    <section
+      className="relative py-20 sm:py-24 lg:py-28 bg-cover bg-center"
+      style={{ backgroundImage: "url('/faq.jpg')" }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/85 to-orange-900/70"></div>
 
-      {/* Decorative shapes */}
-      <div className="absolute -top-24 -left-24 w-80 h-80 bg-blue-400/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-orange-400/20 rounded-full blur-3xl"></div>
-
-      <div className="relative max-w-4xl mx-auto px-6">
+      {/* Content */}
+      <div className="relative max-w-5xl mx-auto px-5 sm:px-6 text-white">
         
         {/* Header */}
-        <div className="text-center mb-14">
-          <span className="inline-block mb-4 px-4 py-1 text-sm font-semibold tracking-widest uppercase rounded-full bg-orange-100 text-orange-600">
-            FAQ
-          </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+        <div
+          className="mb-12 sm:mb-16 max-w-3xl"
+          data-aos="fade-right"
+        >
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Frequently Asked Questions
           </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-            Clear answers to common questions about our engineering services and project execution capabilities.
+          <p className="text-base sm:text-lg text-white/80">
+            Answers to common questions about our industrial engineering services,
+            execution capabilities, and technical expertise.
           </p>
         </div>
 
-        {/* FAQ Items */}
-        <div className="space-y-6">
+        {/* FAQ List */}
+        <div className="space-y-4">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white/80 backdrop-blur-lg border border-white/50 rounded-2xl shadow-lg overflow-hidden transition-all duration-500"
+              data-aos="fade-up"
+              data-aos-delay={index * 120}
+              className="bg-white text-gray-900 rounded-xl shadow-md overflow-hidden"
             >
               <button
-                onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center justify-between px-6 py-5 text-left"
+                onClick={() =>
+                  setActiveIndex(activeIndex === index ? null : index)
+                }
+                className="w-full flex justify-between items-center px-5 sm:px-6 py-4 sm:py-5 text-left"
               >
-                <h3 className="text-lg md:text-xl font-semibold text-gray-800">
+                <h3 className="font-semibold text-base sm:text-lg">
                   {faq.question}
                 </h3>
                 <FaChevronDown
@@ -70,13 +73,13 @@ const ServicesFAQ = () => {
               </button>
 
               <div
-                className={`px-6 transition-all duration-500 ease-in-out ${
+                className={`px-5 sm:px-6 transition-all duration-500 ease-in-out ${
                   activeIndex === index
-                    ? "max-h-40 pb-6 opacity-100"
+                    ? "max-h-40 pb-5 opacity-100"
                     : "max-h-0 opacity-0 overflow-hidden"
                 }`}
               >
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
                   {faq.answer}
                 </p>
               </div>

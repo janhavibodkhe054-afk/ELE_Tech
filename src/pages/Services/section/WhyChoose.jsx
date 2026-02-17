@@ -2,13 +2,15 @@ import React from "react";
 
 const WhyChoose = () => {
   return (
-    <section className="relative overflow-hidden py-10 bg-gradient-to-br from-violet-50 via-blue-50 to-orange-100">
+    <section className="relative overflow-hidden py-24 bg-gradient-to-br from-violet-50 via-blue-50 to-orange-100">
+
       {/* FLOATING BACKGROUND SHAPES */}
       <div className="absolute -top-32 -left-32 w-[28rem] h-[28rem] bg-violet-500/20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute top-1/4 -right-40 w-[26rem] h-[26rem] bg-blue-500/20 rounded-full blur-3xl animate-pulse"></div>
       <div className="absolute -bottom-32 left-1/3 w-[30rem] h-[30rem] bg-orange-400/20 rounded-full blur-3xl animate-pulse"></div>
 
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-20 items-center">
+
         {/* LEFT CONTENT */}
         <div>
           <span className="text-orange-500 uppercase tracking-widest text-sm font-semibold">
@@ -30,17 +32,24 @@ const WhyChoose = () => {
         </div>
 
         {/* RIGHT FLIP CARDS */}
-        <div className="flex justify-center lg:justify-end gap-10">
+        {/* 🔑 MOBILE FIX IS HERE */}
+        <div
+          className="
+            flex gap-10
+            overflow-x-auto lg:overflow-visible
+            snap-x snap-mandatory
+            pb-6
+            lg:justify-end
+          "
+        >
+
           {/* CARD 1 */}
-          <div className="group w-100 h-[420px] [perspective:1200px]">
+          <div className="group min-w-[280px] lg:min-w-0 w-[280px] lg:w-100 h-[420px] snap-center [perspective:1200px]">
             <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+
               {/* FRONT */}
               <div className="absolute inset-0 bg-white/70 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden backface-hidden">
-                <img
-                  src="/overview.jpg"
-                  alt="Expert Engineers"
-                  className="h-48 w-full object-cover"
-                />
+                <img src="/overview.jpg" className="h-48 w-full object-cover" alt="" />
                 <div className="p-6 text-center">
                   <h4 className="text-violet-900 font-semibold text-xl">
                     Expert Engineers
@@ -56,9 +65,8 @@ const WhyChoose = () => {
                 <h4 className="font-bold text-2xl mb-5 text-center">
                   Expert Engineers
                 </h4>
-                <ul className="space-y-3 text-sm leading-relaxed">
+                <ul className="space-y-3 text-sm">
                   <li>✔ Multidisciplinary engineering experts</li>
-
                   <li>✔ Precision-driven design solutions</li>
                   <li>✔ Continuous innovation mindset</li>
                 </ul>
@@ -67,14 +75,11 @@ const WhyChoose = () => {
           </div>
 
           {/* CARD 2 */}
-          <div className="group w-100 h-[420px] mt-12 [perspective:1200px]">
+          <div className="group min-w-[280px] lg:min-w-0 w-[280px] lg:w-100 h-[420px] mt-0 lg:mt-12 snap-center [perspective:1200px]">
             <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+
               <div className="absolute inset-0 bg-white/70 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden backface-hidden">
-                <img
-                  src="/safety.webp"
-                  alt="Safety First"
-                  className="h-48 w-full object-cover"
-                />
+                <img src="/safety.webp" className="h-48 w-full object-cover" alt="" />
                 <div className="p-6 text-center">
                   <h4 className="text-blue-900 font-semibold text-xl">
                     Safety First
@@ -89,10 +94,9 @@ const WhyChoose = () => {
                 <h4 className="font-bold text-2xl mb-5 text-center">
                   Safety First
                 </h4>
-                <ul className="space-y-3 text-sm leading-relaxed">
+                <ul className="space-y-3 text-sm">
                   <li>✔ International safety compliance</li>
                   <li>✔ Advanced risk management systems</li>
-
                   <li>✔ Protecting people & assets</li>
                 </ul>
               </div>
@@ -100,14 +104,11 @@ const WhyChoose = () => {
           </div>
 
           {/* CARD 3 */}
-          <div className="group w-100 h-[420px] mt-24 [perspective:1200px]">
+          <div className="group min-w-[280px] lg:min-w-0 w-[280px] lg:w-100 h-[420px] mt-0 lg:mt-24 snap-center [perspective:1200px]">
             <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+
               <div className="absolute inset-0 bg-white/70 backdrop-blur-xl rounded-2xl shadow-2xl overflow-hidden backface-hidden">
-                <img
-                  src="/turnkey.jpg"
-                  alt="Turnkey Projects"
-                  className="h-48 w-full object-cover"
-                />
+                <img src="/turnkey.jpg" className="h-48 w-full object-cover" alt="" />
                 <div className="p-6 text-center">
                   <h4 className="text-orange-600 font-semibold text-xl">
                     Turnkey Projects
@@ -122,7 +123,7 @@ const WhyChoose = () => {
                 <h4 className="font-bold text-2xl mb-5 text-center">
                   Turnkey Projects
                 </h4>
-                <ul className="space-y-3 text-sm leading-relaxed">
+                <ul className="space-y-3 text-sm">
                   <li>✔ Concept to commissioning</li>
                   <li>✔ Design, procurement & execution</li>
                   <li>✔ Single-point responsibility</li>
@@ -131,6 +132,7 @@ const WhyChoose = () => {
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

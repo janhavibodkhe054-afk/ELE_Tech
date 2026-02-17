@@ -69,7 +69,7 @@ const HeroHome = () => {
         <div className="flex flex-col md:flex-row gap-4 md:gap-4 animate-[fadeUp_1.2s_ease-out]">
 
           {/* LEFT CARD */}
-          <div className="flex-1 bg-white p-6 sm:p-8 text-center flex flex-col justify-center transition duration-300 hover:shadow-2xl">
+          <div className="flex-1 bg-white p-6 sm:p-8 text-center flex flex-col justify-center transition duration-300 hover:shadow-2xl shadow-lg">
             <h3 className="font-semibold text-lg mb-2">Automation Industry</h3>
             <p className="text-gray-600 text-sm sm:text-base">
               Productivity automation solutions helping industries improve
@@ -87,7 +87,7 @@ const HeroHome = () => {
           </div>
 
           {/* RIGHT CARD */}
-          <div className="flex-1 bg-white p-6 sm:p-8 text-center flex flex-col justify-center transition duration-300 hover:shadow-2xl">
+          <div className="flex-1 bg-white p-6 sm:p-8 text-center flex flex-col justify-center transition duration-300 hover:shadow-2xl shadow-lg">
             <h3 className="font-semibold text-lg mb-2">Real Estate Industry</h3>
             <p className="text-gray-600 text-sm sm:text-base">
               Electrical and infrastructure solutions for modern commercial
