@@ -1,7 +1,13 @@
 import React from "react";
 import "aos/dist/aos.css";
+import { useNavigate } from "react-router-dom";
 
 const VisionMission = () => {
+  const navigate = useNavigate();
+
+  const handleclick = () => {
+    navigate("/about");
+  };
   const services = [
     {
       id: 1,
@@ -93,7 +99,9 @@ const VisionMission = () => {
                           {service.description}
                         </p>
 
-                        <button className="px-6 py-2.5 sm:px-6 sm:py-3 rounded-full bg-orange-500 text-white text-sm sm:text-base md:text-base font-semibold hover:bg-orange-600 transition duration-300 shadow-md">
+                        <button 
+                        onClick={handleclick}
+                        className="px-6 py-2.5 sm:px-6 sm:py-3 rounded-full bg-orange-500 text-white text-sm sm:text-base md:text-base font-semibold hover:bg-orange-600 transition duration-300 shadow-md">
                           Read More
                         </button>
                       </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const ServicesHero = () => {
   return (
-    <section className="relative w-full h-[320px] sm:h-[380px] md:h-[450px] lg:h-[520px] overflow-hidden bg-blue-900">
+    <section className="relative w-full h-[320px] sm:h-[380px] md:h-[450px] lg:h-[400px] overflow-hidden bg-blue-900">
       {/* ===== Background Image ===== */}
       <div
         className="absolute inset-0"
