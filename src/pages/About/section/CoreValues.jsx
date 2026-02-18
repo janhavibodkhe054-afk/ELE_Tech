@@ -12,39 +12,7 @@ const CoreValues = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
 
         {/* LEFT SIDE BIG CIRCLE IMAGE */}
-        <div className="relative flex justify-center items-center w-full lg:w-1/2">
-
-          {/* ORANGE RING */}
-          <div className="absolute w-64 sm:w-[480px] h-64 sm:h-[480px] rounded-full border-[30px] sm:border-[40px] border-orange-100"></div>
-
-          {/* BLUE RING */}
-          <div className="absolute w-72 sm:w-[540px] h-72 sm:h-[540px] rounded-full border-[15px] sm:border-[20px] border-blue-100"></div>
-
-          {/* MAIN IMAGE */}
-          <div
-            data-aos="zoom-in"
-            className="relative w-56 sm:w-[420px] h-56 sm:h-[420px] rounded-full overflow-hidden shadow-2xl border-4 sm:border-8 border-white"
-          >
-            <img
-              src="/circle.avif"
-              alt="Engineering Work"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
-          {/* FLOATING BADGE */}
-          <div
-            data-aos="fade-up"
-            className="absolute bottom-4 sm:bottom-8 right-0 bg-white shadow-xl px-4 sm:px-6 py-2 sm:py-4 rounded-xl border-l-4 border-orange-500 text-center sm:text-left w-40 sm:w-auto"
-          >
-            <p className="text-blue-900 font-bold text-sm sm:text-lg">
-              Core Values
-            </p>
-            <p className="text-gray-500 text-xs sm:text-sm">
-              Engineering Excellence
-            </p>
-          </div>
-        </div>
+        
 
         {/* RIGHT SIDE CONTENT */}
         <div className="w-full lg:w-1/2">
@@ -138,6 +106,39 @@ const CoreValues = () => {
               </div>
             </div>
 
+          </div>
+        </div>
+        <div className="relative flex justify-center items-center w-full lg:w-1/2">
+
+          {/* ORANGE RING */}
+          <div className="absolute w-64 sm:w-[480px] h-64 sm:h-[480px] rounded-full border-[30px] sm:border-[40px] border-orange-100"></div>
+
+          {/* BLUE RING */}
+          <div className="absolute w-72 sm:w-[540px] h-72 sm:h-[540px] rounded-full border-[15px] sm:border-[20px] border-blue-100"></div>
+
+          {/* MAIN IMAGE */}
+          <div
+            data-aos="zoom-in"
+            className="relative w-56 sm:w-[420px] h-56 sm:h-[420px] rounded-full overflow-hidden shadow-2xl border-4 sm:border-8 border-white"
+          >
+            <img
+              src="/circle.avif"
+              alt="Engineering Work"
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          {/* FLOATING BADGE */}
+          <div
+            data-aos="fade-up"
+            className="absolute bottom-4 sm:bottom-8 right-0 bg-white shadow-xl px-4 sm:px-6 py-2 sm:py-4 rounded-xl border-l-4 border-orange-500 text-center sm:text-left w-40 sm:w-auto"
+          >
+            <p className="text-blue-900 font-bold text-sm sm:text-lg">
+              Core Values
+            </p>
+            <p className="text-gray-500 text-xs sm:text-sm">
+              Engineering Excellence
+            </p>
           </div>
         </div>
 

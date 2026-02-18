@@ -4,13 +4,16 @@ import InfoAbout from './section/InfoAbout'
 import VisinAbout from './section/VisinAbout'
 import CoreValues from './section/CoreValues'
 import QualitySection from './section/QualitySection'
+import AboutSection from './section/AboutSection'
 
 const About = () => {
   return (
     <div>
       <HeroAbout />
-      <InfoAbout />
+      <AboutSection/>
+      
       <VisinAbout />
+      <InfoAbout />
       <QualitySection/>
       <CoreValues />
     </div>
