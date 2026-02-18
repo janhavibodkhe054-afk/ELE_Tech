@@ -7,7 +7,7 @@ const VisionAbout = () => {
       className="relative py-20 sm:py-28 overflow-hidden"
       style={{
         backgroundImage:
-          "url('https://ees-india.co.in/wp-content/uploads/2024/07/EES-4-1.jpg')",
+          "url('/EEs.jpg')",
         backgroundAttachment: "fixed",
         backgroundSize: "cover",
         backgroundPosition: "center",

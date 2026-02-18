@@ -22,7 +22,7 @@ const AboutSection = () => {
 
             {/* Image */}
             <img
-              src="https://globalenggsolutions.in/wp-content/uploads/2025/02/Vision-to-Reality.webp"
+              src="/global.webp"
               alt="Engineering Design"
               className="relative z-10 w-full h-full object-cover rounded-full shadow-2xl"
             />
