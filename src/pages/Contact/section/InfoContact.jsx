@@ -170,7 +170,6 @@ ${name}
                 title: "Email Id",
                 text: (
                   <>
-                    santosh.matkar@ele-tech.com <br />
                     sales@ele-tech.com <br />
                     info@ele-tech.com
                   </>
