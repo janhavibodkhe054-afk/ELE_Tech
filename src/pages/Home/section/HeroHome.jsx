@@ -41,7 +41,7 @@ const HeroHome = () => {
               From Our Company
             </h1>
 
-            <p className="mt-4 text-gray-200 text-sm sm:text-base md:text-lg">
+            <p className="mt-4 text-white text-lg sm:text-base md:text-xl">
               Engineering solutions focused on quality, reliability and
               performance. We deliver turnkey mechanical, electrical and
               infrastructure projects tailored to industrial needs.

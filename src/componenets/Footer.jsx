@@ -85,6 +85,11 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/career" className="hover:text-orange-400 transition">
+                  Career
+                </Link>
+              </li>
+              <li>
                 <Link
                   to="/services"
                   className="hover:text-orange-400 transition"
@@ -99,6 +104,16 @@ const Footer = () => {
                 >
                   Industries
                 </Link>
+                
+              </li>
+              <li>
+                <Link
+                  to="/client"
+                  className="hover:text-orange-400 transition"
+                >
+                  Our Client
+                </Link>
+                
               </li>
               <li>
                 <Link

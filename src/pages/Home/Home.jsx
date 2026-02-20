@@ -10,8 +10,9 @@ const Home = () => {
   return (
     <div>
       <HeroHome />
-      <ServiceHome /> 
       <AboutHome />
+      <ServiceHome /> 
+      
         <WhoHome />
         
         <VisionMission />
